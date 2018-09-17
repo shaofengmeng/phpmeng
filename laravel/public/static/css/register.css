@@ -1,0 +1,59 @@
+﻿.orange{ color: #e95700;}
+.blue{ color: #2674D1;}
+
+.content_box{ margin-top: 6px; padding: 0 0 80px; border-bottom: 2px solid #fd8100;}
+.main_wrap{ border: 1px solid #ddd;}
+
+.register_box{ padding: 30px 30px 60px 30px;}
+.register_box .box{ display: none;}
+.register_box .row{ margin-left: 85px; padding: 12px 0;}
+.register_box .row .txt_left{ float: left; margin-left: -85px;}
+.register_box .row .question{ background:url(../images/question.png) no-repeat center; padding:0 10px; cursor:pointer; position:relative; opacity: 0.6;}
+.register_box .row .question{
+	transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;	/* Firefox 4 */
+	-webkit-transition: opacity 0.5s;	/* Safari 和 Chrome */
+	-o-transition: opacity 0.5s;	/* Opera */
+}
+.register_box .row .question div{ position:absolute; top:-5px; left:25px; border:1px solid #ddd; width:300px; display:none; font-size:12px; line-height: 20px; font-style:normal; padding:3px 10px; background:#FFFFFF; border-radius: 5px; cursor: auto;}
+.register_box .row .question:hover{ opacity: 1;}
+.register_box .row .question:hover div{ display:block;}
+
+.register_box .head{ border-bottom: 3px solid #fc9605;}
+.register_box .head span{ background-color: #fc9605; color: #fff; padding: 2px 15px;}
+
+.register_box .user_type_tabs{ padding-bottom: 75px;}
+.register_box .user_type_tabs label{ position: relative; margin-right: 20px; padding-left: 10px; cursor: pointer;}
+.register_box .user_type_tabs input{ position: relative; top: 1px;}
+.register_box .user_type_tabs .arrow_up{ position: absolute; width: 17px; height: 17px; background: url(../images/arrow_up.gif) no-repeat; bottom: -20px; left: 7px; display: none;}
+.register_box .user_type_tabs .introduction{ display: none; position: absolute; border: 1px solid #B6B6B6; background-color: #F4F2DF; width: 200px; bottom: -80px; padding: 5px; line-height: 18px; font-size: 13px; border-radius: 3px; color: #555;}
+
+.register_box .ipt_outer{ border: 1px solid #ccc; padding: 5px 5px; font-size: 13px;}
+.register_box .ipt_outer input{ border: 0; outline: none; width: 200px;}
+.register_box .ipt_outer .year{ width: 50px;}
+.register_box .ipt_outer .month{ width: 30px;}
+.register_box .ipt_outer .day{ width: 30px;}
+.register_box .validate_code_wrap{ position: relative;}
+.register_box .validate_code_img{ position: absolute; width: 85px; height: 20px; top: 3px; right: 5px; display: none;}
+.register_box .identify_code_wrap{ position: relative;}
+.register_box .identify_code_btn{ position: absolute; width: 85px; height: 16px; line-height: 16px; padding: 2px 0; text-align: center; top: 2px; right: 2px; background-color: #f1f1f1; border: 1px solid #ddd; cursor: pointer;}
+.register_box .identify_code_btn:hover{ text-decoration: none; background-color: #ddd; border: 1px solid #eee;}
+.register_box .identify_code_btn.disabled{ display: none; background-color: #ddd; border: 1px solid #eee; color: #aaa; cursor: not-allowed; cursor: no-drop;}
+.register_box .register_btn{ background-color: #fc9603; opacity: 0.8; width: 200px; padding: 6px; color: #fff; text-align: center; cursor: pointer;}
+.register_box .register_btn{
+	transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;	/* Firefox 4 */
+	-webkit-transition: opacity 0.2s;	/* Safari 和 Chrome */
+	-o-transition: opacity 0.2s;	/* Opera */
+}
+.register_box .register_btn:hover{ opacity: 1;}
+.register_box .register_btn.disabled{ display: none; background-color: #ddd; color: #aaa; cursor: not-allowed; cursor: no-drop;}
+
+.register_box .select{ font-size: 13px; margin-right: 5px;}
+.register_box .checkbox input{ position: relative; top: 3px;}
+.school_march_wrap{ position: relative;}
+.school_march_wrap .list{ position: absolute; top: 100%; background-color: #fff; border: 1px solid #ccc; display: none;}
+.school_march_wrap .list a{ display: block; font-size: 13px; padding: 0 5px; line-height: 24px; width: 200px; color: #999; cursor: pointer;}
+.school_march_wrap .list a:hover,.school_march_wrap .list a.selected{ background-color: #f7f7f7; color: #000;}
+
+.show_when_edit{ display: none;}

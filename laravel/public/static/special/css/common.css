@@ -1,0 +1,85 @@
+﻿/*-----created by Joyan ----*/
+/*-------公共样式------*/
+[v-cloak] {
+    display: none;
+}
+.gray_bg{
+    background:#f3f5f6;
+}
+.box_shadow{box-shadow:0 10px 36px #e6e6e6;-moz-box-shadow:0 10px 36px #e6e6e6;}
+.m_box{}
+.f_color{color:#ff923a}
+.clamp1{
+    -ms-text-overflow: ellipsis;  text-overflow: ellipsis;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.clamp2{
+    -ms-text-overflow: ellipsis;  text-overflow: ellipsis;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.clamp2{
+    -ms-text-overflow: ellipsis;  text-overflow: ellipsis;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.slideleft{
+    -webkit-transform: translateX(0);
+    -webkit-animation-name: slideinfromright;
+    -webkit-animation-duration: 250ms;
+    transform: translateX(0);
+    animation-name: slideinfromright;
+    animation-duration: 250ms;
+}
+.fadein{
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 650ms; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes slideinfromright {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes slideinfromright {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    20% {
+        opacity: 0; /*中间状态 透明度为0*/
+    }
+    40% {
+        opacity: 0.2; /*中间状态 透明度为0*/
+    }
+    50% {
+        opacity: 0.4; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}

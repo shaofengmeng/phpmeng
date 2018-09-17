@@ -1,0 +1,770 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>兼职猫app-免费、安全、靠谱｜大学生蓝领喜爱的临时工软件</title>
+	
+
+<!-- mata & link -->
+<meta name="keywords" content="兼职猫，兼职网，临时工，大学生兼职，兼职招聘" />
+<meta content="兼职猫，兼职网，临时工，大学生兼职，兼职招聘" name="description" />
+<link rel="icon" href="http://oss.aliyuncs.com/jianzhimao/web-res/icon/jianzhimao-logo-min.png?version=2.28.23" type="image/x-icon" />
+<link resl="shortcut icon" href="http://oss.aliyuncs.com/jianzhimao/web-res/icon/jianzhimao-logo-min.png?version=2.28.23" type="image/x-icon" />
+
+	<link rel="stylesheet" href="static/special/css/reset.css">
+	<link rel="stylesheet" href="static/special/css/common.css">
+	<link rel="stylesheet" href="static/special/css/header.css">
+	<link rel="stylesheet" href="static/special/css/footer.css">
+	<link rel="stylesheet" href="static/special/css/index.css">
+
+	<link rel="stylesheet"
+		  href="static/special/css/alt.css">
+
+	<script>
+		//使低于IE9的浏览器兼容html5标签
+		(function() {
+			if (!
+							/*@cc_on!@*/
+							0) return;
+			var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, figcaption, footer, header, hgroup, main, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+			var i= e.length;
+			while (i--){
+				document.createElement(e[i])
+			}
+		})();
+
+	</script>
+
+</head>
+
+<body id="top">
+<div class="container" id="index_page">
+	<!--header头部 Start-->
+	<div class="header header2">
+		<div class="head_wrap">
+			<div class="w_logo">
+				<img src="static/special/picture/logo.png" height="100%"/>
+			</div>
+			<nav>
+				<div class="w_nav">
+					<a href="/"> <div class="nav_item active">首页</div></a>
+					<a href="http://guangzhou.jianzhimao.com"> <div class="nav_item">兼职网页版</div></a>
+					<a href="/ctrlindex/enterprise.html"> <div class="nav_item">企业服务</div></a>
+					<a href="/task/"><div class="nav_item"> 喵任务</div></a>
+					<a href="/news/"><div class="nav_item"> 行业资讯</div></a>
+					<a href="/ctrlCooperate/help.html"><div class="nav_item"> 帮助中心</div></a>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--header头部 End-->
+	<!--顶部banner Start-->
+	<section class="s1">
+		<div class="banner_layer clearfix">
+			<a class="video" id="play"><i class="icon icon_video"></i>
+			</a>
+			<div class="video_box" id="video_box">
+				<a class="close_video" id="close_video"></a>
+			</div>
+			<div class="layer-contain">
+				<img class="slogan" src="static/special/picture/slogan.png"/>
+				<div class="btn_theme" id="findJob">找兼职</div>
+                
+                	<a href="/ctrlcity/login"><div class="btn_theme">发布兼职</div></a>
+                
+                
+			</div>
+			<div class="last_news_box">
+				<div class="last_news">
+					<div class="title">
+						<i class="icon icon_news"></i><span class="font-s1">最新动态: </span>
+					</div>
+					<div class="list">
+						<ul id="scroll_wrap" class="scroll_wrap">
+
+							<li v-for="news in last_news_tips">
+								<a rel="nofollow" :href="news.link" target="_blank">{{news.title}}</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="pnum_box">目前已有 <span id="resume_sum" class="strong">399, 688, 200</span>人通过平台找到兼职</div>
+	</section>
+	<!--顶部banner End-->
+
+	<!--"特点" 轮播切换 Start-->
+	<section>
+		<div class="spot_wrap">
+			<div class="mid_wrapper" style="position:relative;">
+				<div class="sp_left">
+					<ul class="sp_slide1">
+						<li class="slide_item item3 slideleft active" ></li>
+						<li class="slide_item item4 slideleft" ></li>
+						<li class="slide_item item2 slideleft" ></li>
+						<li class="slide_item item1 slideleft" ></li>
+					</ul>
+					<i class="icon-arrow-left btn pre"></i><i class="icon-arrow-right btn next"></i>
+				</div>
+
+				<div class="sp_right fadein">
+					<ul class="sp_slide2">
+						<li class="active">
+							<span class="num">01</span>
+							<div class="sp_title">多重审核</div>
+							<p>兼职猫的信息经过多重审核， 层层过滤黑中介和虚假信息。  招聘企业经过实名认证，实地认证，安全可靠！</p>
+						</li>
+						<li>
+							<span class="num">02</span>
+							<div class="sp_title">兼职保险</div>
+							<p>兼职猫推出兼职保险为你保驾护航，赔付的额度高达250元每次。</p>
+						</li>
+						<li>
+							<span class="num">03</span>
+							<div class="sp_title">喵任务</div>
+							<p>手机就能完成的兼职，让你足不出户躺在家里舒服的完成的兼职。</p>
+						</li>
+						<li>
+							<span class="num">04</span>
+							<div class="sp_title">兼职旅行</div>
+							<p>用替旅馆兼职打工换取旅行的食宿，边打工边旅行就是如此任性。</p>
+						</li>
+					</ul>
+					<div class="sp_icon">
+						<i class="active icon icon_shandian"></i>
+						<i class="icon icon_dunpai"></i>
+						<i class="icon icon_wendang"></i>
+						<i class="icon icon_airplane"></i>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!--"特点" 轮播切换  End-->
+
+	<!--兼职信息 Start-->
+	<section>
+		<div class="news_wrap">
+			<div class="mid_wrapper news_contain">
+				<div class="news_top">
+					<div class="w_title_wline">兼职信息</div>
+					<a href="http://www.jianzhimao.com/ctrlcity/changeCity.html">
+						<div class="w_address" v-cloak>
+							<i class="icon icon_address"></i>
+							<span>{{city_name}}</span>
+							<i class="icon icon_arrow_down"></i>
+						</div>
+					</a>
+
+				</div>
+				<div class="news_main box_shadow">
+					<div class="news_mtitle">
+						<ul class="news_tabs"><li class="active">最新兼职</li><li>全职招聘</li></ul>
+						<a href="http://guangzhou.jianzhimao.com">
+							<div class="more">
+								查看更多
+							</div>
+						</a>
+					</div>
+					<div class="news_list_box">
+						<div class="tab_box active">
+							<ul class="news_list">
+							
+								
+								
+									
+									<li >
+									<a target="_blank" href="http://guangzhou.jianzhimao.com/job/bWNwSlMxbnVZb1E9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+									<p class="item_title">兼职发淘宝天猫优惠券/日结
+									</p>
+									<div class="font_s2">
+									<span class="mar">工作地点: 海珠</span>
+									<span>工作时间: 05-24-11-20</span>
+									</div>
+									<div class="font_s2"><span>浏览次数: 750829</span></div>
+									</div>
+									<div class="item_right">
+									<span class="f_color">300元/天</span><span> </span>
+									<span  class="main_btn">报名</span>
+									</div>
+									</a>
+									</li>
+								
+									<li >
+									<a target="_blank" href="http://guangzhou.jianzhimao.com/job/Qjgzd3prU0svRFk9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+									<p class="item_title">淘宝天猫优惠券代理，20岁以上
+									</p>
+									<div class="font_s2">
+									<span class="mar">工作地点: 海珠</span>
+									<span>工作时间: 06-13-06-22</span>
+									</div>
+									<div class="font_s2"><span>浏览次数: 2267131</span></div>
+									</div>
+									<div class="item_right">
+									<span class="f_color">300元/天</span><span> </span>
+									<span  class="main_btn">报名</span>
+									</div>
+									</a>
+									</li>
+								
+									<li >
+									<a target="_blank" href="http://guangzhou.jianzhimao.com/job/N3drUFBoVnpJam89.html">
+									<div class="tag">临时工</div>
+									<div class="context">
+									<p class="item_title">可做15天/长白班+广州礼品盒工厂
+									</p>
+									<div class="font_s2">
+									<span class="mar">工作地点: 萝岗</span>
+									<span>工作时间: 08-25-09-10</span>
+									</div>
+									<div class="font_s2"><span>浏览次数: 511</span></div>
+									</div>
+									<div class="item_right">
+									<span class="f_color">21元/小时</span><span> </span>
+									<span  class="main_btn">报名</span>
+									</div>
+									</a>
+									</li>
+								
+									<li >
+									<a target="_blank" href="http://guangzhou.jianzhimao.com/job/OVpydytRaS9rR2c9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+									<p class="item_title">纯线上兼职做完即结算
+									</p>
+									<div class="font_s2">
+									<span class="mar">工作地点: 天河</span>
+									<span>工作时间: 08-13-09-13</span>
+									</div>
+									<div class="font_s2"><span>浏览次数: 37485</span></div>
+									</div>
+									<div class="item_right">
+									<span class="f_color">200元/天</span><span> </span>
+									<span  class="main_btn">报名</span>
+									</div>
+									</a>
+									</li>
+								
+									<li >
+									<a target="_blank" href="http://guangzhou.jianzhimao.com/job/V3ozQXJBYit2MGM9.html">
+									<div class="tag">校内</div>
+									<div class="context">
+									<p class="item_title">创意班服厂家直招代理兼职
+									</p>
+									<div class="font_s2">
+									<span class="mar">工作地点: 天河</span>
+									<span>工作时间: 08-13-02-09</span>
+									</div>
+									<div class="font_s2"><span>浏览次数: 835</span></div>
+									</div>
+									<div class="item_right">
+									<span class="f_color">600元/单</span><span> </span>
+									<span  class="main_btn">报名</span>
+									</div>
+									</a>
+									</li>
+								
+								
+							
+							</ul>
+						</div>
+						<div class="tab_box">
+							<ul class="news_list">
+						
+							
+							
+							
+							<li>
+								<a target="_blank" href="http://guangzhou.jianzhimao.com/job/QjFtQnI1R3NUckU9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+										<p class="item_title">在家可做的手机简单日结兼职
+										</p>
+										<div class="font_s2">
+											<span class="mar">工作地点: 天河</span>
+											<span>工作时间: 07-28-08-27</span>
+										</div>
+										<div class="font_s2"><span>浏览次数: 188229</span></div>
+									</div>
+									<div class="item_right">
+										<span class="f_color">300元/天</span><span> </span>
+										<span  class="main_btn">报名</span>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a target="_blank" href="http://guangzhou.jianzhimao.com/job/OVpydytRaS9rR2c9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+										<p class="item_title">纯线上兼职做完即结算
+										</p>
+										<div class="font_s2">
+											<span class="mar">工作地点: 天河</span>
+											<span>工作时间: 08-13-09-13</span>
+										</div>
+										<div class="font_s2"><span>浏览次数: 37519</span></div>
+									</div>
+									<div class="item_right">
+										<span class="f_color">200元/天</span><span> </span>
+										<span  class="main_btn">报名</span>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a target="_blank" href="http://guangzhou.jianzhimao.com/job/bWNwSlMxbnVZb1E9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+										<p class="item_title">兼职发淘宝天猫优惠券/日结
+										</p>
+										<div class="font_s2">
+											<span class="mar">工作地点: 海珠</span>
+											<span>工作时间: 05-24-11-20</span>
+										</div>
+										<div class="font_s2"><span>浏览次数: 750889</span></div>
+									</div>
+									<div class="item_right">
+										<span class="f_color">300元/天</span><span> </span>
+										<span  class="main_btn">报名</span>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a target="_blank" href="http://guangzhou.jianzhimao.com/job/QzVuUXhpWHZzZ2s9.html">
+									<div class="tag">校内</div>
+									<div class="context">
+										<p class="item_title">各大高校学生干部简单班服轻松赚取
+										</p>
+										<div class="font_s2">
+											<span class="mar">工作地点: 番禺</span>
+											<span>工作时间: 08-01-02-01</span>
+										</div>
+										<div class="font_s2"><span>浏览次数: 1691</span></div>
+									</div>
+									<div class="item_right">
+										<span class="f_color">800元/单</span><span> </span>
+										<span  class="main_btn">报名</span>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a target="_blank" href="http://guangzhou.jianzhimao.com/job/bENjN3p0SWNQVXc9.html">
+									<div class="tag">其他</div>
+									<div class="context">
+										<p class="item_title">手赚app不出家门领高薪
+										</p>
+										<div class="font_s2">
+											<span class="mar">工作地点: 海珠</span>
+											<span>工作时间: 07-24-08-23</span>
+										</div>
+										<div class="font_s2"><span>浏览次数: 57793</span></div>
+									</div>
+									<div class="item_right">
+										<span class="f_color">200元/天</span><span> </span>
+										<span  class="main_btn">报名</span>
+									</div>
+								</a>
+							</li>
+							
+							
+						
+							</ul>
+
+							<div v-else class="empty_box">
+								<img src="static/special/picture/empty.jpg"/>
+								<p>（该城市兼职较少，我们正努力扩展优质岗位）</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!--兼职信息 End-->
+
+	<!--行业资讯 Start-->
+	<section class="zixun_wrap">
+		<div class="mid_wrapper">
+			<div class="w_title_wline">行业资讯</div>
+			<div class="zixun_box">
+				
+				<div>
+					<div class="zx_item">
+					<a target="_blank" href="//www.jianzhimao.com/news/2148.html">
+						<div class="zx_img">
+							
+							
+							
+								<img src="static/special/picture/zixun_mr.jpg"/>
+							
+							
+						</div>
+					
+						<div class="zx_context" >
+							暑假工的工作内容有很多，在车间做临时工是很常见的一种形式，也是能填满为期两个月的兼职形式。那么做车间的临时工会是什么感受呢，枯燥乏味还是有所收获，乏善可陈还是苦
+						</div>
+						<div class="zx_bottom">
+							
+							<div class="f_color">阅读全文</div>
+						</div>
+					</a>
+					</div>
+				</div>
+				
+				<div>
+					<div class="zx_item">
+					<a target="_blank" href="//www.jianzhimao.com/news/2144.html">
+						<div class="zx_img">
+							
+							
+							
+								<img src="static/special/picture/zixun_mr.jpg"/>
+							
+							
+						</div>
+					
+						<div class="zx_context" >
+							实习职位一般是没有薪水或者只有很少的补贴。实习时间从一个学期、一个季度到一个暑假不等。实习面试是确定你是否适合实习工作的最重要的方式。 所以兼职猫小编在这里建议
+						</div>
+						<div class="zx_bottom">
+							
+							<div class="f_color">阅读全文</div>
+						</div>
+					</a>
+					</div>
+				</div>
+				
+				<div>
+					<div class="zx_item">
+					<a target="_blank" href="//www.jianzhimao.com/news/2143.html">
+						<div class="zx_img">
+							
+							
+							
+								<img src="static/special/picture/zixun_mr.jpg"/>
+							
+							
+						</div>
+					
+						<div class="zx_context" >
+							暑假即将来临，类似于暑假要不要找兼职实习，怎么找实习这类的问题也越来越被大家关注，下面兼职猫小编分享一篇朋友找实习的一些经历感想，希望对大家有所帮助。
+						</div>
+						<div class="zx_bottom">
+							
+							<div class="f_color">阅读全文</div>
+						</div>
+					</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!--行业资讯 End-->
+
+
+	<!--展示墙 Start-->
+	<!--v2.0 此处不需要修改-->
+	<!--v2.0 静态资源展示-->
+	<section class="s5">
+		<div class="w_main photo-wall" id="photo-wall">
+			<div class="photo_header">
+				<h2>大学生喜爱的兼职APP</h2>
+				<p>每天都有数十万小伙伴在这里找到合适的兼职</p>
+				<a href="/ctrlCooperate/qghz.html" class="sponsor">申请社团赞助</a>
+			</div>
+			<ul class="wall-pace">
+				<li class="sq-sm"><img src=""></li>
+				<li class="rect-x"><img src="">
+					<dl class="intr-x">
+					</dl></li>
+				<li class="sq-lg"><img src="">
+					<dl class="intr-s">
+					</dl></li>
+				<li class="rect-y"><img src=""></li>
+			</ul>
+			<ul class="wall-pace">
+				<li class="sq-lg"><img src="">
+					<dl class="intr-s">
+					</dl></li>
+				<li class="rect-y"><img src=""></li>
+				<li class="sq-sm"><img src=""></li>
+				<li class="rect-x"><img src="">
+					<dl class="intr-x">
+					</dl></li>
+			</ul>
+		</div>
+	</section>
+	<!--展示墙 End-->
+
+
+	<!--推荐城市 Start -->
+	<section class="city_wrap">
+		<div class="mid_wrapper">
+			<p class="st_title">热门城市</p>
+			<div class="tn_font">
+				<a target="_blank" href="http://beijing.jianzhimao.com">北京兼职</a>
+				<a target="_blank" href="http://shanghai.jianzhimao.com">上海兼职</a>
+				<a target="_blank" href="http://guangzhou.jianzhimao.com">广州兼职</a>
+				<a target="_blank" href="http://shenzhen.jianzhimao.com">深圳兼职</a>
+				<a target="_blank" href="http://wuhan.jianzhimao.com">武汉兼职</a>
+				<a target="_blank" href="http://chengdu.jianzhimao.com">成都兼职</a>
+				<a target="_blank" href="http://hangzhou.jianzhimao.com">杭州兼职</a>
+				<a target="_blank" href="http://nanchang.jianzhimao.com">南昌兼职</a>
+				<a target="_blank" href="http://tianjin.jianzhimao.com">天津兼职</a>
+				<a target="_blank" href="http://zhengzhou.jianzhimao.com">郑州兼职</a>
+			</div>
+			<p class="st_title">友情链接</p>
+			<div class="tn_font">
+				<a target="_blank" :href="ft.link" v-for="ft in friendly_links">{{ft.name}}</a>
+			</div>
+		</div>
+	</section>
+	<!--推荐城市 End -->
+</div>
+<div class="_alert_box">
+	<div class="find_job_alert">
+		<div class="alert_title">
+			找兼职
+			<i class="icon icon-close alert_close">
+			</i>
+		</div>
+		<div class="con">
+			<div class="alert_left">
+				<a target="_blank" href="http://guangzhou.jianzhimao.com"><span class="btn_jump">进入兼职猫网页版</span></a>
+				<p>经济独立,从兼职做起</p>
+			</div>
+			<div class="alert_right">
+				<div class="scan">
+					<ul class="tab_tle"><li class="active">求职端</li><li>企业端</li></ul>
+					<ul class="tab_con">
+						<li class="active"><img src="static/special/picture/code_qiuzh_app.jpg"/><p>扫码下载兼职猫<span class="f_color">求职端app</span></p></li>
+						<li><img src="static/special/picture/code_qiye_app.jpg"/><p>扫码下载兼职猫<span class="f_color">企业端app</span></p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- 悬浮条 -->
+<div class="index_ad">
+	<div class="cnt">
+		<img src="static/special/picture/index_xft.png">
+		<a href="/ctrlindex/enterprise.html" class="apply"></a>
+		<a href="javascript:;" class="close"></a>
+	</div>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer1">
+            <div class="ft_box">
+                <div class="ft_left">
+                    <div class="ft_left_bot">
+                        <div class="ft_item">
+                            <a target="_blank" rel="nofollow" href="//www.jianzhimao.com/ctrlindex/contact.html" style="padding-left: 0;">关于我们</a>
+                            <a target="_blank" rel="nofollow" href="//www.jianzhimao.com/ctrlindex/join.html">加入我们</a>
+                            <a target="_blank" rel="nofollow" href="//www.jianzhimao.com/ctrlindex/enterprise.html">企业推广</a>
+                            <a target="_blank" rel="nofollow" href="//www.jianzhimao.com/ctrlCooperate/help.html">帮助中心</a>
+                        </div>
+                        <p class="cp_right"> Copyright©2018 兼职猫 jianzhimao.com 广州九尾信息科技有限公司 版权所有   <a style="color:#ffc9a9;" href="http://www.miibeian.gov.cn" target="_blank">粤ICP备13061591号 </a></p>
+                    </div>
+                </div>
+                <div class="ft_right">
+                    <img src="static/special/picture/code_dingyuehao.jpg" class="scan_img" />
+                    <div class="tip">
+                        <p>扫描关注微信号</p><p>[兼职猫]</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+
+    //CNZZ统计
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1000413010'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1000413010' async type='text/javascript'%3E%3C/script%3E"));
+
+    //baidu统计
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript async src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F447f87add4dbd73deca17a45d8536dbd' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+
+<script>
+//延迟CNZZ统计, 以免影响页面载入
+
+</script>
+<script type='text/javascript'>
+		var user_id="";
+		var company_name="";
+		var user_name="";
+		var company_id="";
+		var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+        	
+          _vds.push(['setAccountId', 'b0d18e1f996f733e']);
+          _vds.push(['setCS1', 'user_id', user_id]);
+          _vds.push(['setCS2', 'company_id', company_id]);
+          _vds.push(['setCS3', 'user_name', company_name]);
+          _vds.push(['setCS3', 'company_name', company_name]);
+         
+
+          (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+          })();
+        })();
+</script>
+<script>
+//判断当前浏览类型  
+function checkBrowserType()  
+{  
+	var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+	var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器  
+	var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器  
+	var isEdge = userAgent.indexOf("Windows NT 6.1; Trident/7.0;") > -1 && !isIE; //判断是否IE的Edge浏览器  
+	var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器  
+	var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器  
+	var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器  
+
+	if (isIE)   
+	{  
+		 var reIE = new RegExp("MSIE (\\d+\\.\\d+);");  
+		 reIE.test(userAgent);  
+		 var fIEVersion = parseFloat(RegExp["$1"]);  
+		 if(fIEVersion == 7)  
+		 { return "IE7";}  
+		 else if(fIEVersion == 8)  
+		 { return "IE8";}  
+		 else if(fIEVersion == 9)  
+		 { return "IE9";}  
+		 else if(fIEVersion == 10)  
+		 { return "IE10";}  
+		 else if(fIEVersion == 11)  
+		 { return "IE11";}  
+		 else  
+		 { return "0"}//IE版本过低  
+	 }//isIE end  
+	   
+	 if (isFF) {  return "FF";}  
+	 if (isOpera) {  return "Opera";}  
+	 if (isSafari) {  return "Safari";}  
+	 if (isChrome) { return "Chrome";}  
+	 if (isEdge) { return "Edge";}  
+ }//myBrowser() end  
+ var _t = checkBrowserType();
+ if(_t=="IE7" || _t=="IE8" ||_t=="0"){
+	if(document.getElementById("borwserTips")==undefined){
+		var div = document.createElement("div");
+		div.setAttribute("id","borwserTips");
+		var txt = document.createTextNode("抱歉，你所用的浏览器版本过低，导致部分内容无法正常使用，可考虑升级IE9及以上版本或更换谷歌，火狐等浏览器进行使用，体验更佳哟。");
+		div.appendChild(txt);
+		div.style.background = "#fef9e5";
+		div.style.color = "#ff5202";
+		div.style.fontSize = "14px";
+		div.style.textAlign = "center";
+		div.style.height = "30px";
+		div.style.lineHeight = "30px";
+		var firstChild = document.body;
+		firstChild.insertBefore(div,firstChild.childNodes[0])
+	}
+ }
+
+
+ function isweixindo(){
+			if(is_weixin()){
+				$("#tipweixin").show();
+			}else{
+			}
+ }
+function is_weixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// 函数
+ function browser_pc() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = ["Android", "iPhone",
+                  "SymbianOS", "Windows Phone",
+                  "iPad", "iPod"];
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+          if (userAgentInfo.indexOf(Agents[v]) > 0) {
+              flag = false;
+              break;
+          }
+      }
+      return flag;
+}
+
+//判断是否是苹果端
+function is_ios() {
+    var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    return isiOS;
+}
+</script>
+
+
+
+<input type="hidden" value="jianzhimao.com" id="host">
+<input type="hidden" value="guangzhou" id="city">
+<input type="hidden" value="广州" id="city_spell">
+<input type="hidden" value="https" id="https">
+<input type="hidden" value="http" id="http">
+</body>
+</html>
+<script src="static/special/js/sea.js"></script>
+<script>
+	seajs.config({
+		alias: {
+			'jquery': 'plugin/jquery/jquery',
+			'vue':'plugin/vue/vue'
+		}
+	});
+	seajs.use('index_v2.js?v=20180410');
+</script>

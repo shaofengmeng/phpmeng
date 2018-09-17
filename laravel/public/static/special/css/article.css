@@ -1,0 +1,12 @@
+﻿/*  container  */
+#article_page .w_main{width:780px;min-height:600px;background:#fff;margin:20px auto;}
+.article_box{padding:40px;min-height:600px;box-sizing: border-box;}
+.article_top{position:relative;width:780px;height:280px;background:url("../images/article_02.jpg"); background-color:#d8d8d8;color:#fff;}
+.article_top h1,.article_top p{position:absolute;left:0;padding:0 28px;margin:0;}
+.article_top h1{font-size:32px;bottom:64px;font-weight:normal;text-align: justify;}
+.article_top p{font-size:16px;bottom:30px;}
+
+.article_box article{box-sizing:border-box;overflow:hidden;color:#6c6c6c;line-height: 2;}
+.article_box article img{max-width:100%;height:auto;}
+
+.read_more{margin-top:30px;}
