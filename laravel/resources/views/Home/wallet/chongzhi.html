@@ -1,0 +1,340 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>钱包--充值</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<!--  使低于IE9版本的浏览器支持html5标签  -->
+<!--[if lt IE 9]>
+    <script src="static/js/html5.js"></script>
+    <![endif]-->
+<link rel="icon"
+	href="http://oss.aliyuncs.com/jianzhimao/web-res/icon/jianzhimao-logo-min.png?version=2.28.23"
+	type="image/x-icon" />
+<link resl="shortcut icon"
+	href="http://oss.aliyuncs.com/jianzhimao/web-res/icon/jianzhimao-logo-min.png?version=2.28.23"
+	type="image/x-icon" />
+<script src="static/js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="static/css/reset.css">
+<link rel="stylesheet" href="static/css/header.css">
+<link rel="stylesheet" href="static/css/container_header_logo_box.css">
+<link rel="stylesheet" href="static/css/publish.css">
+<link rel="stylesheet" href="static/css/footer.css">
+<link rel="stylesheet" href="static/css/alt.css">
+<!--  font-awesome图标集  -->
+<link rel="stylesheet" href="static/css/font-awesome.min.css">
+<!--[if IE 7]>
+        <link rel="stylesheet" href="static/css/font-awesome-ie7.min.css">
+        <![endif]-->
+<link rel="stylesheet" href="static/css/kalendae.css">
+  <style>
+    .m-setpass{ padding: 15px;  padding-top: 55px; font-family: "微软雅黑"; line-height: 34px;}
+    .m-setpass .tit{ font-size: 18px;  color:#333333; margin-bottom: 25px;}
+    .m-setpass .tit .ye{ padding-left:30px; color:#ff3600;}
+    .m-setpass  label{ font-size: 14px; font-family: "宋体"; color: #666666; margin-bottom: 15px;}
+    .m-setpass  input{ font-size: 14px; font-family: "宋体"; color: #333; margin-bottom: 15px; padding-left: 10px; width: 180px; height: 34px;}
+    .m-setpass .btn{ display: block;  width: 120px; height: 36px; border-radius: 3px; background: #f39800;  line-height: 36px;  text-align: center; color: #fff; font-size: 18px;  }
+    .m-setpass .btn:hover{  background: #db8900;  text-decoration: none; }
+    .deal::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    .deal::-webkit-outer-spin-button {
+      -webkit-appearance: none;	/* 有无看不出差别 */
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+<script src="static/js/sea.js"></script>
+<script>
+	var year = new Date().getFullYear(),
+		month = (new Date().getMonth()+1>9)? new Date().getMonth()+1:"0"+ (new Date().getMonth()+1),
+		date = (new Date().getDate()>9)? new Date().getDate():"0"+new Date().getDate(),
+		hour = (new Date().getHours()>9)? new Date().getHours():"0"+new Date().getHours();
+		time = new Date().getTime();
+	var datetime =  year + month + date + hour+time;
+seajs.config({
+	  alias: { },
+	  map: [
+	    [ /^(.*\/web\/assets\/js\/.*\.(?:css|js))(?:.*)$/i, '$1?v='+ datetime ]
+	  ]
+	});
+
+
+</script>
+<header class="header">
+	<nav class="w_main navigation_box">
+		<div class="city_wrap">
+			<span class="city">郑州</span> <a rel="nofollow" href="http://www.jianzhimao.com/ctrlcity/changeCity.html">[切换城市]</a>
+		</div>
+		<div class="channel_box">
+			<a rel="nofollow" href="http://www.jianzhimao.com">首页</a>
+			<a rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/qghz.html" id="cooperation">申请社团赞助</a>
+			 <a rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/enterprise.html">企业服务</a>
+
+
+			
+
+
+			|
+			
+		    
+
+				
+					<a rel="nofollow" href="/ctrlenprise/companyinfo" class="user_name" id="user_name" title="15824827306">15824827306</a>
+				
+		    
+			
+
+				<a rel="nofollow" href="/ctrlcity/loginOut">退出 </a>
+
+			
+
+		</div>
+	</nav>
+	<div id="cooperation_box_alt" class="cooperation_box_alt">
+        <div class="cooperation_box_overlay"></div>
+        <div class="cooperation_box">
+            <div class="title">申请合作<a rel="nofollow" class="close_btn" href="javascript:;" onclick="this.parentNode.parentNode.parentNode.style.display='none'">×</a></div>
+            <div class="cont">
+                <div class="p_left"><img src="static/picture/cooperation.png" alt="申请合作"></div>
+                <div class="p_right">
+                    <a rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/qydl.html" target="_blank" class="btn company">申请区域代理</a>
+                    <a rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/wzhz.html" target="_blank" class="btn websize">申请网站合作</a>
+                    <a rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/qghz.html" target="_blank" class="btn school">申请勤工合作</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="container">
+  <header class="w_main">
+    <div class="logo_box clearfix"> <a href="/" class="logo left"><img src="static/picture/logo.png" alt="兼职猫logo"></a>
+      <div class="title_wrap left">充值</div>
+    </div>
+    <hr color="f39800" style="height: 2px; background-color: #F39800"/>
+  </header>
+  <!-- 20150818 新增 面包屑 -->
+  
+  <div class="bread-crumb_box w_main g-t10 g-b10"> <a rel="nofollow" href="/">郑州兼职猫</a> <i class="icon-angle-right"></i>
+    <a rel="nofollow" href="/ctrlcompwallet/wallet?p=1&t=1">我的钱包></a> <i class="icon-angle-right"></i><span>充值</span> </div>
+  
+  <!--  面包屑 end-->
+  <div class="w_main content_box">
+    <article class="main_wrap clearfix">
+      <div class="public_box">
+
+        <!-- 20150910 还款 支付流程  -->
+        <div class="g-payment"> 
+          <!-- 订单详情-->
+          <div class="m-paycon m-setpass" jid="10010">
+            <table>
+              <tr>
+                <td align="right"><label for="j-je">充值金额：</label></td>
+                <td>  <input id="j-chongzhiNum"  type="number" class="deal" placeholder="输入充值金额"/> 元</td>
+              </tr>
+            </table>
+            </div>
+          <!-- 订单详情 end-->
+          <!-- 支付方式 -->
+          <div class="m-payment_list">
+            <p class="tit">请选择支付方式</p>
+            <ul class="list">
+              <li class="m-zhifubao" id="j-zhifubao"> <i class="icon"></i>
+                <div>支付宝支付</div>
+              </li>
+            </ul>
+          </div>
+          <!-- 支付方式 end --> 
+          <!-- 支付按钮  -->
+          <div class="m-paypass">
+            <div class="btn"> <a href="javascript:" class="j-pay_btn ok">立即支付</a></div>
+          </div>
+        </div>
+        <!--支付按钮 end--> 
+        <!-- 20150828 快结兼职 支付流程 end -->
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+	<div class="w_main channel">
+		<a target="_blank" rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/contact.html" style="padding-left: 0;">关于我们</a>|
+    	<a target="_blank" rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/join.html">加入我们</a>|
+    	<a target="_blank" rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/enterprise.html">企业推广</a>|
+    	<a target="_blank" rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/help.html">帮助中心</a>| &nbsp; &nbsp; &nbsp; 企业服务热线：4008034199 &nbsp; &nbsp;| &nbsp; &nbsp;业务电话：020-37109777
+    	<a class="qq" target="_blank" rel="nofollow" href="tencent://message/?uin=800005602&amp;Site=http://qbar.qq.com/application/&amp;Menu=ye"><img src="static/picture/kf_qq.png" /></a>
+        <a class="qq" target="_blank" rel="nofollow" href="tencent://message/?uin=3547627935&amp;Site=http://qbar.qq.com/application/&amp;Menu=ye"><img src="static/picture/yw_qq.png" /></a>
+
+	</div>
+	<p class="w_main"> Copyright©2018 兼职猫 jianzhimao.com 广州九尾信息科技有限公司 版权所有   <a style="color:#727272;" href="http://www.miibeian.gov.cn" target="_blank">粤ICP备13061591号</a> </p>
+</footer>
+  
+
+    <script type="text/javascript">
+
+    //CNZZ统计
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1000413010'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1000413010' async type='text/javascript'%3E%3C/script%3E"));
+
+    //baidu统计
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript async src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F447f87add4dbd73deca17a45d8536dbd' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+
+<script>
+//延迟CNZZ统计, 以免影响页面载入
+
+</script>
+<script type='text/javascript'>
+		var user_id="13335447";
+		var company_name="云和数据";
+		var user_name="";
+		var company_id="13335447";
+		var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+        	
+          _vds.push(['setAccountId', 'b0d18e1f996f733e']);
+          _vds.push(['setCS1', 'user_id', user_id]);
+          _vds.push(['setCS2', 'company_id', company_id]);
+          _vds.push(['setCS3', 'user_name', company_name]);
+          _vds.push(['setCS3', 'company_name', company_name]);
+         
+
+          (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+          })();
+        })();
+</script>
+<script>
+//判断当前浏览类型  
+function checkBrowserType()  
+{  
+	var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+	var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器  
+	var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器  
+	var isEdge = userAgent.indexOf("Windows NT 6.1; Trident/7.0;") > -1 && !isIE; //判断是否IE的Edge浏览器  
+	var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器  
+	var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器  
+	var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器  
+
+	if (isIE)   
+	{  
+		 var reIE = new RegExp("MSIE (\\d+\\.\\d+);");  
+		 reIE.test(userAgent);  
+		 var fIEVersion = parseFloat(RegExp["$1"]);  
+		 if(fIEVersion == 7)  
+		 { return "IE7";}  
+		 else if(fIEVersion == 8)  
+		 { return "IE8";}  
+		 else if(fIEVersion == 9)  
+		 { return "IE9";}  
+		 else if(fIEVersion == 10)  
+		 { return "IE10";}  
+		 else if(fIEVersion == 11)  
+		 { return "IE11";}  
+		 else  
+		 { return "0"}//IE版本过低  
+	 }//isIE end  
+	   
+	 if (isFF) {  return "FF";}  
+	 if (isOpera) {  return "Opera";}  
+	 if (isSafari) {  return "Safari";}  
+	 if (isChrome) { return "Chrome";}  
+	 if (isEdge) { return "Edge";}  
+ }//myBrowser() end  
+ var _t = checkBrowserType();
+ if(_t=="IE7" || _t=="IE8" ||_t=="0"){
+	if(document.getElementById("borwserTips")==undefined){
+		var div = document.createElement("div");
+		div.setAttribute("id","borwserTips");
+		var txt = document.createTextNode("抱歉，你所用的浏览器版本过低，导致部分内容无法正常使用，可考虑升级IE9及以上版本或更换谷歌，火狐等浏览器进行使用，体验更佳哟。");
+		div.appendChild(txt);
+		div.style.background = "#fef9e5";
+		div.style.color = "#ff5202";
+		div.style.fontSize = "14px";
+		div.style.textAlign = "center";
+		div.style.height = "30px";
+		div.style.lineHeight = "30px";
+		var firstChild = document.body;
+		firstChild.insertBefore(div,firstChild.childNodes[0])
+	}
+ }
+
+
+ function isweixindo(){
+			if(is_weixin()){
+				$("#tipweixin").show();
+			}else{
+			}
+ }
+function is_weixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// 函数
+ function browser_pc() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = ["Android", "iPhone",
+                  "SymbianOS", "Windows Phone",
+                  "iPad", "iPod"];
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+          if (userAgentInfo.indexOf(Agents[v]) > 0) {
+              flag = false;
+              break;
+          }
+      }
+      return flag;
+}
+
+//判断是否是苹果端
+function is_ios() {
+    var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    return isiOS;
+}
+</script>
+  
+<!-- 支付宝支付弹窗  -->
+<div id="token_obj" class="data_hidden">
+		{"token":"1535350979402"}
+</div>
+<div id="host_obj" class="data_hidden">
+		{"host":"jianzhimao.com"}
+</div>
+</body>
+</html>
+<script src="static/js/sea.js"></script>
+<script>
+    seajs.use("wallet_recharge");
+</script>
+<script>
+  window.onload=function(){
+    var obj=document.getElementById("j-zhifubao")
+    obj.click()
+  }
+</script>

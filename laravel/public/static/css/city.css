@@ -1,0 +1,149 @@
+﻿.logo_box {
+	padding: 20px 20px;
+}
+
+.logo_box .left {
+	float: left;
+}
+
+.logo_box .right {
+	float: right;
+}
+
+.logo_box .search_wrap {
+	margin-top: 12px;
+	margin-left: 20px;
+}
+
+.logo_box .title_wrap {
+	margin-top: 12px;
+	margin-left: 20px;
+	color: #fd8100;
+	font-size: 20px;
+	font-family: 'Microsoft YaHei'
+}
+
+.content_box {
+	margin-top: 6px;
+	padding: 0 15px 40px;
+	border-bottom: 2px solid #fd8100;
+}
+
+.city_box {
+	border: 1px solid #dddddd;
+	border-bottom: 0 solid;
+}
+
+.city_box>li {
+	padding: 20px 20px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.city_box .li1 .ttl {
+	margin-right: 10px;
+}
+
+.city_box .li1 select {
+	margin-right: 5px;
+}
+
+.city_box .li1 .confirm {
+	padding: 3px 10px;
+	background-color: #e18d0a;
+	color: #fff;
+	border: 0 solid;
+	font-size: 13px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.city_box .search_wrap {
+	position: relative;
+}
+
+.city_box .search_input {
+	position: absolute;
+	left: 0;
+	width: 140px;
+	padding: 1px 5px;
+	font-size: 13px;
+}
+
+.city_box .search_wrap .list {
+	border: 1px solid #dddddd;
+	position: absolute;
+	left: 0;
+	width: 150px;
+	background-color: #fff;
+	display: none;
+}
+
+.city_box .search_wrap .list a {
+	padding: 3px 5px;
+	display: block;
+	color: #999;
+	font-size: 13px;
+}
+
+.city_box .search_wrap .list a:hover {
+	background-color: #f7f7f7;
+	color: #000;
+}
+
+.city_box .search_wrap .list a.selected {
+	background-color: #f7f7f7;
+	color: #000;
+}
+
+.city_box .li2 a {
+	color: #e18d0a;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.city_box>li.li3 {
+	padding: 20px 0;
+}
+
+.city_table {
+	padding-bottom: 50px;
+}
+
+.city_table li {
+	padding: 15px 20px 15px 65px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	line-height: 26px;
+}
+
+.city_table li:hover {
+	background-color: #f7f7f7;
+	border-color: #dddddd;
+}
+
+.city_table span {
+	border: 1px solid #dddddd;
+	padding: 6px 10px;
+	margin-left: -35px;
+	font-weight: bold;
+	color: #6a6a6a;
+	background-color: #f1eff1;
+}
+
+.city_table span {
+	transition: background-color 0.2s, color 0.2s;
+	-moz-transition: background-color 0.2s, color 0.2s; /* Firefox 4 */
+	-webkit-transition: background-color 0.2s, color 0.2s;
+	/* Safari 和 Chrome */
+	-o-transition: background-color 0.2s, color 0.2s; /* Opera */
+}
+
+.city_table li:hover span {
+	background-color: #e18d0a;
+	color: #fff;
+}
+
+.city_table a {
+	margin-left: 20px;
+	color: #e18d0a;
+}

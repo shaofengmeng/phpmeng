@@ -1,0 +1,48 @@
+﻿.content_box{ margin-top: 6px; padding: 0 0 80px; border-bottom: 2px solid #fd8100;}
+
+.ad_box,.login_box{ float: left; height: 420px; background-color: #f9f9f9;}
+
+.ad_box{ position: relative; overflow: hidden; width: 560px; background-color: #d1cecf;}
+.ad_box .banners{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: none;}
+.ad_box .banners li{ float: left; width: 100%; height: 100%; overflow: hidden;}
+.ad_box .banners li img{ width: 100%; height: 100%;}
+
+.login_box{ width: 440px;}
+.login_box .user_type_tabs span{ float: left;position:relative;color:#8d8d8d; cursor: pointer; width: 50%; height: 45px;font-size:18px; line-height: 45px; text-align: center; background-color: #eeeeee; }
+.login_box .user_type_tabs span:hover{ color: #fd8100;}
+.login_box .user_type_tabs span.selected{ color:#4a4a4a; background-color: #f9f9f9;}
+.login_box .user_type_tabs span.selected:after{content:'';position:absolute;left:50%;bottom:2px;z-index:1;margin-left:-6px;width:0;border-top:8px solid #fe7418;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;}
+.login_box .info_box{ padding: 40px 40px 0 40px;}
+
+.account_wrap,.psw_wrap{ border: 1px solid #c9c9c9; width: 260px; padding: 5px 5px; margin: 8px auto 12px 0; line-height: normal; background-color: #fff; display: block;}
+.account_wrap .icon-user,.psw_wrap .icon-lock{ color: #ddd; font-size: 16px;}
+.account_wrap .account,.psw_wrap .psw{ border: 0 solid; outline: none; width: 230px;}
+
+.forget_psw_wrap{ width: 270px;}
+.forget_psw{ float: right; color: #2674d1; font-size: 13px;}
+
+.validate_code_wrap{ position: relative; display: block; width: 130px;}
+.validate_code{ width: 120px; display: block; padding: 4px 5px; font-size: 13px; border: 1px solid #c9c9c9;}
+.validate_code_img{ position: absolute; top: 2px; left: 135px; display: none;width: 85px;height: 20px;}
+
+.auto_login_wrap{ margin: 15px 0; display: block; font-size: 13px;}
+.auto_login{ margin: 0; padding: 0; position: relative; top: 2px;}
+
+.login_btn{ background-color: #fd8100; color: #fff; width: 260px; line-height: 30px; cursor: pointer; text-align: center; margin-bottom: 10px;}
+.login_btn:hover{ background-color: #fd711c;}
+.login_btn.disabled{ background-color: #ccc; cursor: not-allowed; cursor: no-drop; display: none;}
+
+.register_wrap{ border-top: 1px solid #ddd; width: 270px; padding-top: 20px; font-size: 13px;}
+.register_wrap a{ color: #2674d1;}
+
+.sns_wrap{ margin-top: 15px; float: left; font-size: 13px;}
+.sns_wrap a{ margin-left: 5px;}
+.sns_wrap img{ height: 13px;}
+
+/* 20151015  �˺ű��ⵯ�� */
+.m-zhanghaoNo{ width: 385px; height: 350px; margin: 0 auto; text-align: center; font-family: '΢���ź�';}
+.m-zhanghaoNo .img{ text-align: center; margin-top: 50px; margin-bottom: 50px;}
+.m-zhanghaoNo .tit{ font-size: 20px; color: #333333; margin-bottom: 15px; font-weight: 400;}
+.m-zhanghaoNo .ms{ font-size: 16px; color: #666666;}

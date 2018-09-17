@@ -1,0 +1,182 @@
+﻿@charset "utf-8";
+body{ background-color: #edf5f5; -moz-user-select:none; -webkit-user-select:none; user-select:none;/*  防止文本复制  */}
+.left{ float: left;}
+.right{ float: right;}
+.yellow{ color: #ff841a;}
+.blue{ color: #136cc7;}
+.orange{ color: #ee531d;}
+.grey{ color: #8f8f8f;}
+
+.content_box{ margin-top: 5px; padding-bottom: 30px;border-bottom:none;}
+.content_box .p_left{ float: left; width: 700px;}
+.content_wrap{margin:8px 0;padding:10px;  line-height: 26px;background-color: #fff;}
+.content_wrap .box{ padding: 20px 0; color: #323232;}
+.content_wrap .title{ font-family: 'Microsoft YaHei'; font-size: 22px; font-weight: normal; line-height: 40px;}
+.content_wrap .u-kjjz{ position: relative; display: inline;}
+.content_wrap .u-kjjz:before{ position:absolute; right: -80px; top:5px; content: "快结兼职"; width: 60px; height: 20px; line-height: 20px; background-color: #ff7701; border-radius: 3px; text-align: center; color: #fff; font-size: 14px;}
+.content_wrap .map_box{ width: 100%; height: 130px;background:#ccc;}
+.content_wrap .detail{ word-break: break-all; word-wrap: break-word; color:#646464;}
+.content_wrap .detail a{ color: #136cc7; text-decoration: underline;}
+.content_wrap .detail a:hover{ color: #ee531d;}
+.content_wrap .collect,.content_wrap .share{ cursor: pointer;}
+.content_wrap .share:hover{ text-decoration: none;}
+.content_wrap .apply{ background-color: #ff7701; color: #fff; padding: 8px 30px; cursor: pointer; border: 0 solid; font-size: 16px; border-radius: 5px;}
+.content_box .p_right{ float: right; width: 290px;}
+.content_box .app_wrap{position:relative;width:290px;height:160px;margin-bottom: 10px; background: #fff url(../images/load_app_ban_1.png) no-repeat 15px center;}
+.content_box .app_upload{position:relative;width:290px;height:160px;margin-bottom: 10px; background: #fff url(../images/pic_saomaxiazai_1.png) no-repeat center;}
+
+.content_box .app_wrap .btn_theme{line-height:38px;padding:0 18px;font-size:16px;border-radius:4px;position:absolute;top:65px;right:20px;}
+
+.content_box .ad_box{ position: relative; height: 240px; overflow: hidden; margin-bottom: 10px;}
+.content_box .ad_box_imgs{ position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.content_box .ad_box_imgs a{ float: left; display: block;}
+.content_box .ad_box_imgs img{ height: 240px; width: 288px; display: block;}
+.content_box .ad_box_btns{ position: absolute; bottom: 0; right: 0; margin-bottom: 10px; margin-right: 15px;}
+.content_box .ad_box_btns a{ display: block; background-color: #fff; width: 10px; height: 10px; float: right; margin: auto 5px; background-color: #d2d2d2; border-radius: 5px; cursor: pointer;}
+.content_box .ad_box_btns a.selected{ background-color: #fff; box-shadow: 0 0 5px #1541DD;}
+.m-crumb{ background:#fff;font-size: 14px; padding: 10px 30px;font-size:15px;}
+.m-crumb a{ color: #2674d1;}
+.u-fc_ff7701{ color: #ff7701;}
+/* 20151120 新增公司简介 其他兼职 */
+.m-tab_about{font-family: '微软雅黑', '宋体';background:#fff;padding:16px 36px;margin-bottom:20px;}
+.m-tab_about .tab_tit{ border-bottom: 1px solid #ddd;}
+.m-tab_about .tab_tit li{ float: left; padding:12px 0; font-weight: 600;color: #646464; cursor: pointer; margin-right:40px;}
+.m-tab_about .tab_tit li.cur{ border-bottom:3px solid #ff7701; color: #ff7701; margin-bottom: -1px;}
+.m-tab_about .tab_tit li span{ font-size: 18px; text-align: center; line-height: 24px; height: 24px;}
+.m-tab_about .content_list_wrap .title{ font-size: 14px; line-height: 50px;}
+.m-tab_about .content_list_wrap .area {width: 100px;padding-left: 40px;}
+.m-tab_about .content_list_wrap .visited {width: 80px;padding-left: 0px;}
+.m-tab_about .content_list_box{ float: none; width: 100%;}
+.m-tab_about .content_page_box{ overflow: hidden;}
+.m-tab_about .content_list_wrap{ border: none; min-height: 306px;}
+.m-tab_about .read_more{display:inline-block;float:right;font-size:12px;color:#fe7418;margin:18px 0;text-decoration: none;}
+.empty_box{display:none;text-align: center;font-size:20px;color:#aaa;line-height:100px;}
+.empty_box img{vertical-align: middle;width:150px;}
+
+#repay{font-family: '微软雅黑';font-size:18px;}
+.paying{font-family: '微软雅黑';font-size:18px;width:150px;height:40px;color:#666666;}
+/* 招募结束按钮 */
+
+ /*2016-9-8 新增区别兼职只能在app报名*/
+.content_wrap .tips_box{ padding:65px 70px 35px 70px; border:none;}
+.tips_box img{ float:left; width:114px; }
+.tips_box div.fr{ float:right;}
+.tips_box div h3{ color:#de6946; font-size:28px; font-weight:normal; padding-top:33px;}
+.tips_box div p{ font-size:16px; color:#979797; padding-top:8px;}
+
+/***** 2017-02-04 UI重构 *****/
+.job_header{background:#f8f8fa;padding:20px;height:100px;position:relative;}
+.job_header h1.job_title{color:#333;font-size:30px;line-height:1.5;font-weight:500;}
+.job_header .info{color:#aaaaaa;font-size:15px;line-height:1.5;margin-bottom:10px;}
+.job_header .com_name{color:#aaaaaa;font-size:15px;line-height:1.5;margin-bottom:10px;}
+
+.job_header .job_base{font-size:20px;line-height:1.5;color:#8b8b8c;}
+.job_base .job_price{color:#ff9844;}
+.job_base .job_type{color:#3a89e2;}
+.job_base .job_publish{color:#646464;}
+
+.apply_mask{display:none;width:100%;height:100%;background:rgba(0,0,0,.3);position: fixed;top:0;left:0;z-index: 99;}
+.apply_wrap{width:245px;height:340px;position:absolute;right:20px;top:82px;z-index:100;}
+.apply_wrap .tle{width:120px;height:38px;line-height:38px;background:#ff681f;color:#fff;text-align:center;float:right;}
+.apply_wrap .apply_box{display:none;width:245px;height:283px;margin-top: -2px;position:relative;float:right;border:1px solid #ff681f;background:#fff;text-align: center;}
+.apply_wrap.current .apply_box{display:block;}
+.apply_wrap .apply_box p{margin:10px 50px;font-size:15px;color:#3e3e3e;line-height:1.5;}
+.apply_wrap .apply_box .qrcode{width:142px;height:142px;text-align:center;margin:0 50px;background:#eeeeee;}
+.apply_wrap .apy_bottom{cursor:pointer;width:100%;height:50px;color:#3a89e2;border-top:1px solid #eeeeee;line-height:50px;position:absolute;bottom:0;left:0;}
+
+.btn_theme,.btn_disable{display:inline-block;background:#ff923a;border-bottom:3px solid #ff7d2b;color:#fff;padding:0 30px;line-height:40px;font-size:18px;cursor: pointer;border-radius: 3px;}
+.btn_disable{background:#bbb;border-color:#ddd;}
+.apply_wrap.current .btn_theme,.btn_theme:hover{background:#ff7d2b;border-bottom:3px solid #ff923a;color:#fff;}
+.job_header .btn_theme,.btn_disable{float:right}
+.job_content{padding:10px 30px;}
+.job_list{font-size:15px;line-height:2;margin:10px 0;}
+.job_list .tit{color:#aaaaaa;}
+.job_list .con{color:#333333;}
+.detail_title{font-size:20px; color:#646464;padding-left:12px;font-weight:bold;border-left:4px solid #ff923a;line-height:20px;margin-bottom:30px;}
+
+.company_wrap{overflow:hidden;padding:20px 4px;}
+.company_img{width:120px;height:120px;border:1px solid #eee;float: left;margin-right:20px;}
+.company_img img{width:120px;height:120px;}
+.company_info{float:left;width:460px;}
+.company_info h2{font-size:20px;color:#333;}
+.company_info .com_name{font-size:18px;color:#333;}
+.company_info p{font-size:16px;color:#aaa;line-height:1.5;margin-top:10px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.company_info p .label{color:#333;}
+
+ul.job_item{width:100%;height:auto;padding:0;margin:20px 0;}
+ul.job_item>li{padding:25px 0;margin:0;width:100%;overflow:hidden;background:#f8f8fa;margin-bottom:14px;}
+ul.job_item>li .tag{position:relative;display:inline-block;width:46px;height:46px;background:#7ecef4;font-size:16px;border-radius:50px;text-align:center;line-height:46px;color:#fff;margin:0 18px;float:left;}
+ul.job_item>li .flex_right{width:500px;float:left;}
+ul.job_item>li h2,ul.job_item>li h2 a{color:#89898a;font-size:18px;margin:0;padding:0;font-weight:400;}
+ul.job_item>li p, ul.job_item .link_text{color:#7d7d7e;font-size:14px;margin-top:10px;font-weight:200;}
+ul.job_item>li .tag:after{position:absolute;left:0;top:0;display:block;width:46px;height:46px;border-radius:50px;}
+.lsg:after{ background:#247dac; font-size:12px; content:"临时工";}
+.dy:after{ background:#9cd332; content:"调研";}
+.sx:after{ background:#27b394; content:"实习";}
+.mt:after{ background:#ff89ff; content:"模特";}
+.yc:after{ background:#9d8ef5; content:"演出";}
+.pd:after{ background:#eb5353; content:"派单";}
+.ly:after{ background:#fa8334; content:"礼仪";}
+.sj:after{ background:#57b6ed; content:"设计";}
+.wy:after{ background:#958bca; content:"文员";}
+.xs:after{ background:#f2cc1c; content:"销售";}
+.cx:after{ background:#cb699c; content:"促销";}
+.jj:after{ background:#5691e8; content:"家教";}
+.kf:after{ background:#e85682; content:"客服";}
+.xn:after{ background:#6bba48; content:"校内";}
+.fwy:after{ background:#b59f8a; font-size:12px; content:"服务员";}
+.fy:after{ background:#f29f33; content:"翻译";}
+.qt:after{ background:#5fb7a6; content:"其他";}
+.scy:after{ background:#ff8875; font-size:12px; content:"送餐员";}
+.ab:after{ background:#568db2; content:"安保";}
+.dy:after{ background:#9cd332; content:"调研";}
+
+.page_navigator{text-align: right;}
+.page_navigator li{display:inline-block;margin-left:20px;}
+.page_navigator li a{
+    display:inline-block;
+    padding:4px 20px;
+    color:#aaaaaa;
+    border: 1px solid #dddddd;
+    text-decoration: none;
+}
+.page_navigator li a:hover{background:#ccc;color:#666;}
+
+.theme_color {color:#fea767;}
+.comment_list{width:100%;height:auto;padding:18px 10px;}
+.comment_list .comment_item{width:100%;height:auto;margin:0;padding:10px 0;}
+.comment_item .user_name1{color:#2887e0;line-height:1.8;}
+.comment_item .user_name2{color:#f959d5;line-height:1.8;}
+.comment_item .comment_text{color:#b7b7b7;line-height:1.5;}
+.comment_item .re_comment{margin-top:10px;color:#646464;font-size:16px;padding:20px 10px;background:#f8f8fa;position:relative;}
+.comment_item .re_comment:before{width:0;height:0;content:'';position:absolute;left:20px;top:-10px;border-bottom:10px solid #f8f8fa;border-left:4px solid transparent;border-right:4px solid transparent;}
+
+.like_job{width:638px;
+    margin:24px 0;overflow:hidden;color:#646464;
+}
+.like_job>li{width:270px;height:48px;float:left;margin-right:10px;margin-bottom:10px;border:1px solid #f5f5f5;background:#f8f8fa;padding:26px 18px;}
+.like_job>li>a ,.like_job>li h2{margin-bottom:10px;color:#646464;font-weight:400;}
+.like_job>li p .link_text{color:#5f9ae5;}
+
+
+.container_footer{background:#fff;padding:10px 0 30px;}
+.container .link_block{border:none;}
+.container_footer .link_block{ width: 1000px;margin: auto;padding-top:20px;border-bottom:none;}
+.container_footer .link_block h5{line-height:2;color:#646464;font-size:18px;font-weight:600;}
+.container_footer .link_block p{color:#b7b7b7;line-height:1.8;}
+.container_footer .link_block a {
+    color: #727272;
+    margin-right: 5px;
+}
+.no_info{ text-align: center; padding: 100px 0;}
+.no_info p{ color: #333; padding: 20px 0; font-size: 18px;}
+.no_info a.home{ width: 160px; height: 40px; line-height: 40px; display: inline-block; color: #fff; background: #FF913B; border-radius: 4px;}
